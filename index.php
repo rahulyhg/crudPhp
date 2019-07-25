@@ -44,10 +44,10 @@
                                 <input name="estado" type="text" class="form-control" id="recipient-estado" required>
 
                                 <label for="recipient-sexo" class="col-form-label">Sexo:</label> </br>
-                                <input type="radio" name="radio" value="feminino">
+                                <input type="radio" name="radio" value="f">
                                 <label name="f"> Feminino </label>
 
-                                <input type="radio" name="radio" id="checkM" value="masculino">
+                                <input type="radio" name="radio" id="checkM" value="m">
                                 <label name="m"> Masculino </label> </br>
 
 

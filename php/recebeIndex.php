@@ -12,17 +12,17 @@
 
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $estado = $_POST['estado'];
     $dia = $_POST['dia'];
     $mes = $_POST['mes'];
     $ano = $_POST['ano'];
     $sexo = $_POST['radio'];
+	$estado = $_POST['estado'];
 
     if (!$conexao) {
         die(" Falha na Conexão bro! " . mysqli_connect_error());
     }
 
-    $sql = ("INSERT INTO funcionario (nome, email, estado, dia, mes, ano, sexo) VALUES ('$nome', '$email', '$estado', '$dia', '$mes', '$ano', '$sexo')");
+    $sql = ("INSERT INTO cliente (nome, email, dia, mes, ano, estado, sexo) VALUES ('$nome', '$email', '$dia', '$mes', '$ano', '$estado', '$sexo' )");
 
     if (mysqli_query($conexao, $sql)) {
         echo " Cadastro efetuado com Sucesso!!! ";

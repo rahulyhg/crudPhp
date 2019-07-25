@@ -12,3 +12,8 @@ rg int,
 sexo varchar (2));
 
 select*from cliente;
+
+ALTER TABLE `cadastro`.`cliente` 
+CHANGE COLUMN `rg` `rg` INT(12) NOT NULL ;
+
+
