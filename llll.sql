@@ -8,12 +8,10 @@ email varchar(50),
 dia int,
 mes varchar (14),
 ano int, 
-rg int, 
+estado varchar(50), 
 sexo varchar (2));
 
 select*from cliente;
 
-ALTER TABLE `cadastro`.`cliente` 
-CHANGE COLUMN `rg` `rg` INT(12) NOT NULL ;
 
 
