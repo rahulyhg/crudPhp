@@ -12,17 +12,24 @@
 
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $dia = $_POST['dia'];
-    $mes = $_POST['mes'];
-    $ano = $_POST['ano'];
-    $sexo = $_POST['radio'];
-	$estado = $_POST['estado'];
+    $estado = $_POST['estado'];
+    $dataNascimento = $_POST['dataNascimento']; 
+    $sexo = $_POST['sexo']; 
+    
+
+    echo "$nome </br> "; 
+    echo "$email </br> ";
+    echo "$estado </br> ";
+    echo "$dataNascimento </br> ";
+    echo "$sexo </br> ";
+
+	
 
     if (!$conexao) {
         die(" Falha na Conexão bro! " . mysqli_connect_error());
     }
 
-    $sql = ("INSERT INTO cliente (nome, email, dia, mes, ano, estado, sexo) VALUES ('$nome', '$email', '$dia', '$mes', '$ano', '$estado', '$sexo' )");
+    $sql = ("INSERT INTO cliente (nome, email, dataNascimento, estado, sexo) VALUES ('$nome', '$email', '$dataNascimento', '$estado', '$sexo' )");
 
     if (mysqli_query($conexao, $sql)) {
         echo " Cadastro efetuado com Sucesso!!! ";

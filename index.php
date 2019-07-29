@@ -43,48 +43,13 @@
                                 <label for="recipient-estado" class="col-form-label">Estado:</label>
                                 <input name="estado" type="text" class="form-control" id="recipient-estado" required>
 
-                                <label for="recipient-sexo" class="col-form-label">Sexo:</label> </br>
-                                <input type="radio" name="radio" value="f">
-                                <label name="f"> Feminino </label>
-
-                                <input type="radio" name="radio" id="checkM" value="m">
-                                <label name="m"> Masculino </label> </br>
+                                <label for="recipient-dataNascimento" class="col-form-label">Data de Nascimento:</label></br>
+                                <input type="date" id="dataNascimento" name="dataNascimento">
 
 
-                                <label for="select" required>Data de Nascimento:</label> </br>
-
-                                <!-- Dia --> <select class="form-control" name="dia" id="selectDia" required>
-                                    <?php
-                                    $dia;
-                                    for ($dia = 0; $dia <= 31; $dia++) {
-                                        echo " <option required> $dia </option>   ";
-                                    }
-                                    ?>
-                                </select>
-
-                                <!-- Mês --> <select class="form-control" name="mes" id="selectMes" required>
-                                    <option> Janeiro </option>
-                                    <option> Fevereiro </option>
-                                    <option> Março </option>
-                                    <option> Abril </option>
-                                    <option> Maio </option>
-                                    <option> Junho </option>
-                                    <option> Julho </option>
-                                    <option> Agosto </option>
-                                    <option> Setembro </option>
-                                    <option> Outubro </option>
-                                    <option> Novembro </option>
-                                    <option> Dezembro </option>
-                                </select>
-
-                                <!-- Ano --> <select class="form-control" name="ano" id="selectAno" required>
-                                    <?php
-                                    $ano;
-                                    for ($ano = 1925; $ano <= 2019; $ano++) {
-                                        echo " <option> $ano </option>   ";
-                                    }
-                                    ?>
-                                </select>
+                                <label for="recipient-sexo" class="col-form-label ">Informe seu Sexo:</label></br>
+                                <input type="radio" name="sexo" value="Masculino"> Masculino
+                                <input type="radio" name="sexo" id="checkF" value="Feminino"> Feminino
                             </div>
                     </div>
                     <div class="modal-footer">
